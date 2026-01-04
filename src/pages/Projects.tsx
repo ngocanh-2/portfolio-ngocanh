@@ -9,6 +9,7 @@ import chapter3Ai1 from '@/assets/chapter3-ai1.png';
 import chapter3Ai2 from '@/assets/chapter3-ai2.png';
 import chapter3Ai3 from '@/assets/chapter3-ai3.png';
 import chapter4Trello from '@/assets/chapter4-trello.png';
+import chapter5Video from '@/assets/chapter5-video.mp4';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent } from '@/components/ui/card';
 import Navbar from '@/components/Navbar';
@@ -236,7 +237,10 @@ const projectsData = [
       tools: ['Canva - Thiết kế đồ họa', 'CapCut - Chỉnh sửa video', 'Adobe Express - Tạo nội dung nhanh', 'Figma - Thiết kế giao diện', 'ChatGPT - Gợi ý ý tưởng sáng tạo'],
     },
     evidence: {
-      screenshots: ['Ảnh poster thiết kế', 'Ảnh giao diện làm việc Canva'],
+      screenshots: [],
+      videos: [
+        { src: chapter5Video, caption: 'Video giới thiệu về AI - Sản phẩm sáng tạo nội dung số' }
+      ],
       links: ['Link poster Canva', 'Link video CapCut'],
     },
     analysis: {
