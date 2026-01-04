@@ -8,6 +8,7 @@ import chapter2Search2 from '@/assets/chapter2-search2.png';
 import chapter3Ai1 from '@/assets/chapter3-ai1.png';
 import chapter3Ai2 from '@/assets/chapter3-ai2.png';
 import chapter3Ai3 from '@/assets/chapter3-ai3.png';
+import chapter4Trello from '@/assets/chapter4-trello.png';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent } from '@/components/ui/card';
 import Navbar from '@/components/Navbar';
@@ -187,7 +188,9 @@ const projectsData = [
       tools: ['Google Drive - Lưu trữ và chia sẻ tài liệu', 'Trello - Quản lý dự án', 'Slack/Zalo - Giao tiếp nhóm', 'Zoom - Họp trực tuyến', 'Notion - Ghi chú và tổng hợp'],
     },
     evidence: {
-      screenshots: ['Ảnh giao diện Trello dự án nhóm', 'Ảnh cuộc họp nhóm online'],
+      screenshots: [
+        { src: chapter4Trello, caption: 'Bảng Trello quản lý dự án nhóm Công nghệ số Nhóm 37' }
+      ],
       links: ['Link thư mục Google Drive nhóm', 'Link bảng Trello dự án'],
     },
     analysis: {
