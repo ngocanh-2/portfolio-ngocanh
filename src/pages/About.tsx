@@ -10,17 +10,17 @@ import AnimatedSection from '@/components/AnimatedSection';
 
 const About = () => {
   const interests = [
-    { icon: Code, label: 'Lập trình' },
-    { icon: Palette, label: 'Thiết kế' },
-    { icon: BookOpen, label: 'Đọc sách' },
-    { icon: Lightbulb, label: 'Công nghệ mới' },
+    { icon: Lightbulb, label: 'Công nghệ AI' },
+    { icon: Code, label: 'Ứng dụng số' },
+    { icon: BookOpen, label: 'Kinh tế số' },
+    { icon: Palette, label: 'Sáng tạo nội dung' },
   ];
 
   const learningGoals = [
-    'Phát triển kỹ năng số toàn diện',
-    'Sử dụng AI một cách có trách nhiệm',
-    'Tư duy phản biện và sáng tạo',
-    'Hợp tác hiệu quả trong môi trường số',
+    'Hoàn thành tốt các nhiệm vụ học tập',
+    'Tiếp thu kiến thức để áp dụng vào cuộc sống',
+    'Sử dụng AI một cách có trách nhiệm và hiệu quả',
+    'Phát triển tư duy số trong lĩnh vực kinh tế',
   ];
 
   const portfolioGoals = [
@@ -69,14 +69,15 @@ const About = () => {
                   Sinh viên
                 </Badge>
                 <h1 className="font-display text-4xl md:text-5xl font-bold mb-4">
-                  [Họ và tên của bạn]
+                  Trần Ngọc Anh
                 </h1>
                 <p className="text-xl text-muted-foreground mb-4">
-                  Ngành: [Ngành học của bạn]
+                  Ngành: Kinh tế
                 </p>
                 <p className="text-muted-foreground max-w-lg">
-                  Xin chào! Tôi là sinh viên đang theo học môn Nhập môn Công nghệ số 
-                  và Ứng dụng Trí tuệ nhân tạo. Portfolio này là nơi tôi chia sẻ 
+                  Xin chào! Tôi là sinh viên ngành Kinh tế, đang theo học môn Nhập môn Công nghệ số 
+                  và Ứng dụng Trí tuệ nhân tạo. Tôi đam mê tìm hiểu về công nghệ AI và 
+                  cách ứng dụng nó vào lĩnh vực kinh tế. Portfolio này là nơi tôi chia sẻ 
                   hành trình học tập và sự tiến bộ của mình.
                 </p>
               </motion.div>
@@ -183,19 +184,21 @@ const About = () => {
                   </h3>
                   <div className="prose prose-lg max-w-none text-muted-foreground space-y-4">
                     <p>
-                      [Đây là nơi bạn viết về bản thân theo giọng văn cá nhân, chân thật. 
-                      Hãy chia sẻ về hành trình đến với ngành học, những trải nghiệm 
-                      đã hình thành nên bạn, và lý do bạn muốn phát triển kỹ năng số.]
+                      Là một sinh viên ngành Kinh tế, tôi luôn tò mò về cách công nghệ 
+                      đang thay đổi thế giới kinh doanh. Đặc biệt, trí tuệ nhân tạo 
+                      đã mở ra những cơ hội hoàn toàn mới trong phân tích dữ liệu, 
+                      dự báo xu hướng và tối ưu hóa quy trình.
                     </p>
                     <p>
-                      [Bạn có thể viết về những thách thức đã vượt qua, những người 
-                      đã truyền cảm hứng cho bạn, hoặc những dự định trong tương lai. 
-                      Hãy để giọng văn thể hiện cá tính riêng của bạn.]
+                      Môn học Nhập môn Công nghệ số và Ứng dụng AI đã giúp tôi có cái nhìn 
+                      toàn diện về vai trò của công nghệ trong cuộc sống hiện đại. 
+                      Tôi học được cách sử dụng AI một cách có trách nhiệm, hiểu được 
+                      tầm quan trọng của liêm chính học thuật trong thời đại số.
                     </p>
                     <p>
-                      [Phần này nên thể hiện sự suy nghĩ sâu sắc và không sao chép 
-                      từ bất kỳ nguồn nào. Đây là cơ hội để bạn tạo ấn tượng với 
-                      giảng viên qua sự chân thành và độc đáo của mình.]
+                      Mục tiêu của tôi là hoàn thành tốt các nhiệm vụ học tập, đồng thời 
+                      tích lũy kiến thức để áp dụng vào thực tiễn. Portfolio này chính là 
+                      minh chứng cho quá trình học tập nghiêm túc và sự tiến bộ của tôi.
                     </p>
                   </div>
                 </CardContent>
