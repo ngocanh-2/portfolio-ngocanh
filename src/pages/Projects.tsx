@@ -5,6 +5,9 @@ import chapter1Folder2 from '@/assets/chapter1-folder2.png';
 import chapter1Folder3 from '@/assets/chapter1-folder3.png';
 import chapter2Search1 from '@/assets/chapter2-search1.png';
 import chapter2Search2 from '@/assets/chapter2-search2.png';
+import chapter3Ai1 from '@/assets/chapter3-ai1.png';
+import chapter3Ai2 from '@/assets/chapter3-ai2.png';
+import chapter3Ai3 from '@/assets/chapter3-ai3.png';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent } from '@/components/ui/card';
 import Navbar from '@/components/Navbar';
@@ -134,7 +137,11 @@ const projectsData = [
       tools: ['ChatGPT - Thử nghiệm AI đàm thoại', 'Google Bard - So sánh các AI khác nhau', 'Canva AI - Thử nghiệm AI thiết kế', 'Notion AI - Hỗ trợ tổ chức nội dung'],
     },
     evidence: {
-      screenshots: ['Ảnh kết quả thử nghiệm ChatGPT', 'Ảnh so sánh các công cụ AI'],
+      screenshots: [
+        { src: chapter3Ai1, caption: 'Thử nghiệm ChatGPT viết thư tiếng Anh về sức khỏe' },
+        { src: chapter3Ai2, caption: 'Yêu cầu ChatGPT viết bài thư 300 từ trình độ B1' },
+        { src: chapter3Ai3, caption: 'Kết quả đầy đủ từ ChatGPT về bài viết sức khỏe' }
+      ],
       links: ['Link bài phân tích về AI', 'Link video thuyết trình'],
     },
     analysis: {
