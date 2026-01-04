@@ -1,5 +1,7 @@
 import { Link } from 'react-router-dom';
 import { ArrowRight, Brain, Lightbulb, TrendingUp, Shield } from 'lucide-react';
+import chapter2Search1 from '@/assets/chapter2-search1.png';
+import chapter2Search2 from '@/assets/chapter2-search2.png';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent } from '@/components/ui/card';
 import Navbar from '@/components/Navbar';
@@ -76,7 +78,10 @@ const projectsData = [
       tools: ['Google Search - Tìm kiếm nâng cao', 'Google Scholar - Tìm tài liệu học thuật', 'Notion - Tổ chức và quản lý thông tin', 'ChatGPT - Hỗ trợ tóm tắt nội dung dài'],
     },
     evidence: {
-      screenshots: ['Ảnh minh họa kỹ thuật tìm kiếm', 'Ảnh bảng đánh giá nguồn tin'],
+      screenshots: [
+        { src: chapter2Search1, caption: 'Tìm kiếm bằng tiếng Việt về tác động mạng xã hội đến sinh viên' },
+        { src: chapter2Search2, caption: 'Sử dụng site:edu để tìm nguồn học thuật uy tín' }
+      ],
       links: ['Link Notion bài tổng hợp', 'Link báo cáo nghiên cứu'],
     },
     analysis: {

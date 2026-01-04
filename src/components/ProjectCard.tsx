@@ -5,6 +5,8 @@ import { Badge } from '@/components/ui/badge';
 import { Button } from '@/components/ui/button';
 import { useState } from 'react';
 
+type Screenshot = string | { src: string; caption: string };
+
 interface ProjectCardProps {
   id: string;
   chapter: string;
@@ -16,7 +18,7 @@ interface ProjectCardProps {
     tools: string[];
   };
   evidence: {
-    screenshots: string[];
+    screenshots: Screenshot[];
     links: string[];
   };
   analysis: {
@@ -153,18 +155,37 @@ const ProjectCard = ({ chapter, title, summary, objectives, process, evidence, a
               >
                 <div className="space-y-4">
                   {evidence.screenshots.length > 0 ? (
-                    <div className="grid grid-cols-2 gap-4">
-                      {evidence.screenshots.map((_, i) => (
-                        <div
-                          key={i}
-                          className="aspect-video bg-muted rounded-lg border-2 border-dashed border-border flex items-center justify-center"
-                        >
-                          <div className="text-center p-4">
-                            <Image className="w-8 h-8 mx-auto text-muted-foreground mb-2" />
-                            <p className="text-xs text-muted-foreground">Ảnh minh chứng {i + 1}</p>
+                    <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+                      {evidence.screenshots.map((screenshot, i) => {
+                        const isImageObject = typeof screenshot === 'object' && screenshot.src;
+                        
+                        if (isImageObject) {
+                          return (
+                            <div key={i} className="space-y-2">
+                              <div className="aspect-video bg-muted rounded-lg border border-border overflow-hidden">
+                                <img 
+                                  src={screenshot.src} 
+                                  alt={screenshot.caption}
+                                  className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
+                                />
+                              </div>
+                              <p className="text-xs text-muted-foreground text-center">{screenshot.caption}</p>
+                            </div>
+                          );
+                        }
+                        
+                        return (
+                          <div
+                            key={i}
+                            className="aspect-video bg-muted rounded-lg border-2 border-dashed border-border flex items-center justify-center"
+                          >
+                            <div className="text-center p-4">
+                              <Image className="w-8 h-8 mx-auto text-muted-foreground mb-2" />
+                              <p className="text-xs text-muted-foreground">{typeof screenshot === 'string' ? screenshot : screenshot.caption}</p>
+                            </div>
                           </div>
-                        </div>
-                      ))}
+                        );
+                      })}
                     </div>
                   ) : (
                     <div className="grid grid-cols-2 gap-4">
