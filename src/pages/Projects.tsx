@@ -1,5 +1,8 @@
 import { Link } from 'react-router-dom';
 import { ArrowRight, Brain, Lightbulb, TrendingUp, Shield } from 'lucide-react';
+import chapter1Folder1 from '@/assets/chapter1-folder1.png';
+import chapter1Folder2 from '@/assets/chapter1-folder2.png';
+import chapter1Folder3 from '@/assets/chapter1-folder3.png';
 import chapter2Search1 from '@/assets/chapter2-search1.png';
 import chapter2Search2 from '@/assets/chapter2-search2.png';
 import { Button } from '@/components/ui/button';
@@ -32,7 +35,11 @@ const projectsData = [
       tools: ['Google Docs - Soạn thảo nội dung', 'Google Search - Tra cứu thông tin', 'ChatGPT - Giải thích thuật ngữ kỹ thuật', 'Canva - Thiết kế sơ đồ tư duy'],
     },
     evidence: {
-      screenshots: ['Ảnh sơ đồ cấu tạo máy tính', 'Ảnh chụp bài tập hoàn thành'],
+      screenshots: [
+        { src: chapter1Folder1, caption: 'Thư mục Documents lưu trữ các tài liệu học tập' },
+        { src: chapter1Folder2, caption: 'Thư mục BÀI TẬP CNS được tổ chức gọn gàng' },
+        { src: chapter1Folder3, caption: 'Thư mục bài tập tính điểm cuối kỳ với các file hoàn thành' }
+      ],
       links: ['Link Google Docs bài viết', 'Link Canva sơ đồ tư duy'],
     },
     analysis: {
