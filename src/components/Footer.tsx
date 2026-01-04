@@ -1,9 +1,7 @@
 import { GraduationCap, Heart, Mail, Github, Linkedin } from 'lucide-react';
 import { Link } from 'react-router-dom';
-
 const Footer = () => {
-  return (
-    <footer className="bg-card border-t border-border">
+  return <footer className="bg-card border-t border-border">
       <div className="container mx-auto px-4 py-12">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           {/* Brand */}
@@ -42,27 +40,18 @@ const Footer = () => {
 
           {/* Contact */}
           <div className="space-y-4">
-            <h4 className="font-display font-semibold text-foreground">Liên hệ</h4>
+            <h4 className="font-display font-semibold text-foreground">
+          </h4>
             <div className="flex flex-col gap-2">
-              <a
-                href="mailto:email@example.com"
-                className="text-muted-foreground hover:text-primary transition-colors text-sm flex items-center gap-2"
-              >
-                <Mail className="w-4 h-4" />
+              <a href="mailto:email@example.com" className="text-muted-foreground hover:text-primary transition-colors text-sm flex items-center gap-2">
+              <Mail className="w-4 h-4" />
                 email@example.com
               </a>
-              <a
-                href="#"
-                className="text-muted-foreground hover:text-primary transition-colors text-sm flex items-center gap-2"
-              >
-                <Github className="w-4 h-4" />
+              <a href="#" className="text-muted-foreground hover:text-primary transition-colors text-sm flex items-center gap-2"><Github className="w-4 h-4" />
                 GitHub
               </a>
-              <a
-                href="#"
-                className="text-muted-foreground hover:text-primary transition-colors text-sm flex items-center gap-2"
-              >
-                <Linkedin className="w-4 h-4" />
+              <a href="#" className="text-muted-foreground hover:text-primary transition-colors text-sm flex items-center gap-2">
+              <Linkedin className="w-4 h-4" />
                 LinkedIn
               </a>
             </div>
@@ -74,13 +63,9 @@ const Footer = () => {
           <p className="text-muted-foreground text-sm flex items-center justify-center gap-1">
             Được tạo với <Heart className="w-4 h-4 text-destructive fill-destructive" /> bởi sinh viên
           </p>
-          <p className="text-muted-foreground text-xs mt-2">
-            © 2024 Digital Portfolio. Cam kết liêm chính học thuật.
-          </p>
+          <p className="text-muted-foreground text-xs mt-2">© 2026 Digital Portfolio. Cam kết liêm chính học thuật.</p>
         </div>
       </div>
-    </footer>
-  );
+    </footer>;
 };
-
 export default Footer;

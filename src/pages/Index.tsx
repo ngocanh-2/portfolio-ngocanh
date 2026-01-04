@@ -6,35 +6,29 @@ import { Card, CardContent } from '@/components/ui/card';
 import Navbar from '@/components/Navbar';
 import Footer from '@/components/Footer';
 import AnimatedSection from '@/components/AnimatedSection';
-
 const Index = () => {
-  const features = [
-    {
-      icon: User,
-      title: 'Giới thiệu bản thân',
-      description: 'Tìm hiểu về tôi, mục tiêu học tập và định hướng phát triển kỹ năng số.',
-      link: '/about',
-    },
-    {
-      icon: Folder,
-      title: '6 Dự án học tập',
-      description: 'Tổng hợp các bài tập từ 6 chương, thể hiện quá trình học tập và tiến bộ.',
-      link: '/projects',
-    },
-    {
-      icon: FileText,
-      title: 'Tổng kết & Phản tư',
-      description: 'Chia sẻ trải nghiệm, bài học và sự trưởng thành qua môn học.',
-      link: '/conclusion',
-    },
-  ];
-
+  const features = [{
+    icon: User,
+    title: 'Giới thiệu bản thân',
+    description: 'Tìm hiểu về tôi, mục tiêu học tập và định hướng phát triển kỹ năng số.',
+    link: '/about'
+  }, {
+    icon: Folder,
+    title: '6 Dự án học tập',
+    description: 'Tổng hợp các bài tập từ 6 chương, thể hiện quá trình học tập và tiến bộ.',
+    link: '/projects'
+  }, {
+    icon: FileText,
+    title: 'Tổng kết & Phản tư',
+    description: 'Chia sẻ trải nghiệm, bài học và sự trưởng thành qua môn học.',
+    link: '/conclusion'
+  }];
   const scrollToContent = () => {
-    document.getElementById('content')?.scrollIntoView({ behavior: 'smooth' });
+    document.getElementById('content')?.scrollIntoView({
+      behavior: 'smooth'
+    });
   };
-
-  return (
-    <div className="min-h-screen">
+  return <div className="min-h-screen">
       <Navbar />
 
       {/* Hero Section */}
@@ -47,23 +41,31 @@ const Index = () => {
 
         <div className="container mx-auto px-4 pt-20 relative z-10">
           <div className="max-w-4xl mx-auto text-center">
-            <motion.div
-              initial={{ opacity: 0, y: 30 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.6 }}
-            >
+            <motion.div initial={{
+            opacity: 0,
+            y: 30
+          }} animate={{
+            opacity: 1,
+            y: 0
+          }} transition={{
+            duration: 0.6
+          }}>
               <div className="inline-flex items-center gap-2 px-4 py-2 bg-secondary rounded-full text-secondary-foreground text-sm mb-6">
                 <Sparkles className="w-4 h-4" />
-                <span>Digital Portfolio 2024</span>
+                <span>Digital Portfolio 2026</span>
               </div>
             </motion.div>
 
-            <motion.h1
-              initial={{ opacity: 0, y: 30 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.6, delay: 0.1 }}
-              className="font-display text-4xl md:text-6xl lg:text-7xl font-bold mb-6"
-            >
+            <motion.h1 initial={{
+            opacity: 0,
+            y: 30
+          }} animate={{
+            opacity: 1,
+            y: 0
+          }} transition={{
+            duration: 0.6,
+            delay: 0.1
+          }} className="font-display text-4xl md:text-6xl lg:text-7xl font-bold mb-6">
               Nhập môn{' '}
               <span className="gradient-text">Công nghệ số</span>
               <br />
@@ -71,22 +73,30 @@ const Index = () => {
               <span className="gradient-text">Trí tuệ nhân tạo</span>
             </motion.h1>
 
-            <motion.p
-              initial={{ opacity: 0, y: 30 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.6, delay: 0.2 }}
-              className="text-lg md:text-xl text-muted-foreground mb-8 max-w-2xl mx-auto"
-            >
+            <motion.p initial={{
+            opacity: 0,
+            y: 30
+          }} animate={{
+            opacity: 1,
+            y: 0
+          }} transition={{
+            duration: 0.6,
+            delay: 0.2
+          }} className="text-lg md:text-xl text-muted-foreground mb-8 max-w-2xl mx-auto">
               Portfolio cá nhân thể hiện quá trình học tập, sự tiến bộ và cam kết 
               liêm chính học thuật trong suốt môn học.
             </motion.p>
 
-            <motion.div
-              initial={{ opacity: 0, y: 30 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.6, delay: 0.3 }}
-              className="flex flex-col sm:flex-row gap-4 justify-center"
-            >
+            <motion.div initial={{
+            opacity: 0,
+            y: 30
+          }} animate={{
+            opacity: 1,
+            y: 0
+          }} transition={{
+            duration: 0.6,
+            delay: 0.3
+          }} className="flex flex-col sm:flex-row gap-4 justify-center">
               <Link to="/projects">
                 <Button size="lg" className="gradient-bg text-primary-foreground hover:opacity-90 transition-opacity">
                   <BookOpen className="w-5 h-5 mr-2" />
@@ -105,18 +115,20 @@ const Index = () => {
         </div>
 
         {/* Scroll indicator */}
-        <motion.button
-          initial={{ opacity: 0 }}
-          animate={{ opacity: 1 }}
-          transition={{ delay: 1 }}
-          onClick={scrollToContent}
-          className="absolute bottom-8 left-1/2 -translate-x-1/2 flex flex-col items-center gap-2 text-muted-foreground hover:text-foreground transition-colors"
-        >
+        <motion.button initial={{
+        opacity: 0
+      }} animate={{
+        opacity: 1
+      }} transition={{
+        delay: 1
+      }} onClick={scrollToContent} className="absolute bottom-8 left-1/2 -translate-x-1/2 flex flex-col items-center gap-2 text-muted-foreground hover:text-foreground transition-colors">
           <span className="text-sm">Khám phá thêm</span>
-          <motion.div
-            animate={{ y: [0, 8, 0] }}
-            transition={{ duration: 1.5, repeat: Infinity }}
-          >
+          <motion.div animate={{
+          y: [0, 8, 0]
+        }} transition={{
+          duration: 1.5,
+          repeat: Infinity
+        }}>
             <ChevronDown className="w-6 h-6" />
           </motion.div>
         </motion.button>
@@ -135,8 +147,7 @@ const Index = () => {
           </AnimatedSection>
 
           <div className="grid md:grid-cols-3 gap-6">
-            {features.map((feature, index) => (
-              <AnimatedSection key={feature.title} delay={index * 0.1}>
+            {features.map((feature, index) => <AnimatedSection key={feature.title} delay={index * 0.1}>
                 <Link to={feature.link}>
                   <Card className="h-full card-hover border-border hover:border-primary/50 group cursor-pointer">
                     <CardContent className="p-6">
@@ -156,8 +167,7 @@ const Index = () => {
                     </CardContent>
                   </Card>
                 </Link>
-              </AnimatedSection>
-            ))}
+              </AnimatedSection>)}
           </div>
         </div>
       </section>
@@ -166,21 +176,26 @@ const Index = () => {
       <section className="section-padding">
         <div className="container mx-auto">
           <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
-            {[
-              { value: '6', label: 'Bài tập hoàn thành' },
-              { value: '6', label: 'Chương học' },
-              { value: '100%', label: 'Cam kết liêm chính' },
-              { value: '∞', label: 'Sự tiến bộ' },
-            ].map((stat, index) => (
-              <AnimatedSection key={stat.label} delay={index * 0.1}>
+            {[{
+            value: '6',
+            label: 'Bài tập hoàn thành'
+          }, {
+            value: '6',
+            label: 'Chương học'
+          }, {
+            value: '100%',
+            label: 'Cam kết liêm chính'
+          }, {
+            value: '∞',
+            label: 'Sự tiến bộ'
+          }].map((stat, index) => <AnimatedSection key={stat.label} delay={index * 0.1}>
                 <div className="text-center p-6 rounded-xl bg-card border border-border">
                   <div className="font-display text-4xl font-bold gradient-text mb-2">
                     {stat.value}
                   </div>
                   <div className="text-sm text-muted-foreground">{stat.label}</div>
                 </div>
-              </AnimatedSection>
-            ))}
+              </AnimatedSection>)}
           </div>
         </div>
       </section>
@@ -208,8 +223,6 @@ const Index = () => {
       </section>
 
       <Footer />
-    </div>
-  );
+    </div>;
 };
-
 export default Index;
