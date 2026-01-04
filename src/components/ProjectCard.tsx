@@ -156,7 +156,7 @@ const ProjectCard = ({ chapter, title, summary, objectives, process, evidence, a
                 title="Minh chứng học tập"
               >
                 <div className="space-y-4">
-                  {evidence.screenshots.length > 0 ? (
+                  {evidence.screenshots.length > 0 && (
                     <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                       {evidence.screenshots.map((screenshot, i) => {
                         const isImageObject = typeof screenshot === 'object' && screenshot.src;
@@ -188,20 +188,6 @@ const ProjectCard = ({ chapter, title, summary, objectives, process, evidence, a
                           </div>
                         );
                       })}
-                    </div>
-                  ) : (
-                    <div className="grid grid-cols-2 gap-4">
-                      {[1, 2].map((i) => (
-                        <div
-                          key={i}
-                          className="aspect-video bg-muted rounded-lg border-2 border-dashed border-border flex items-center justify-center"
-                        >
-                          <div className="text-center p-4">
-                            <Image className="w-8 h-8 mx-auto text-muted-foreground mb-2" />
-                            <p className="text-xs text-muted-foreground">Thêm ảnh minh chứng</p>
-                          </div>
-                        </div>
-                      ))}
                     </div>
                   )}
                   {evidence.videos && evidence.videos.length > 0 && (
