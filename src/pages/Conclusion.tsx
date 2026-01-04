@@ -8,33 +8,33 @@ import AnimatedSection from '@/components/AnimatedSection';
 
 const Conclusion = () => {
   const keyLearnings = [
-    'Kỹ năng tìm kiếm và đánh giá thông tin trên internet',
-    'Hiểu biết về trí tuệ nhân tạo và ứng dụng thực tế',
-    'Kỹ năng làm việc nhóm và giao tiếp trong môi trường số',
-    'Khả năng sáng tạo nội dung số chất lượng',
-    'Nhận thức về liêm chính học thuật và an toàn thông tin',
-    'Sử dụng AI một cách có trách nhiệm và hiệu quả',
+    'Kỹ năng tìm kiếm thông tin nâng cao và đánh giá nguồn tin cậy',
+    'Hiểu biết toàn diện về AI và cách ứng dụng có trách nhiệm',
+    'Kỹ năng làm việc nhóm và giao tiếp chuyên nghiệp trong môi trường số',
+    'Khả năng sáng tạo nội dung số với Canva, CapCut và các công cụ hiện đại',
+    'Nhận thức sâu sắc về liêm chính học thuật và an toàn thông tin',
+    'Tư duy phản biện khi tiếp nhận thông tin trong thời đại số',
   ];
 
   const challenges = [
     {
-      challenge: '[Khó khăn 1 - tự bổ sung]',
-      solution: '[Cách bạn vượt qua - tự bổ sung]',
+      challenge: 'Ban đầu chưa quen với việc tổ chức nội dung theo cấu trúc bài bản, dẫn đến bài làm lộn xộn và thiếu logic.',
+      solution: 'Tôi học cách lập dàn ý trước khi viết, sử dụng Notion để tổ chức ý tưởng và tham khảo các mẫu Portfolio chất lượng để cải thiện cấu trúc.',
     },
     {
-      challenge: '[Khó khăn 2 - tự bổ sung]',
-      solution: '[Cách bạn vượt qua - tự bổ sung]',
+      challenge: 'Khó phân biệt giữa việc sử dụng AI hợp lý và đạo văn, lo lắng về ranh giới liêm chính học thuật.',
+      solution: 'Tìm hiểu kỹ quy định của trường, luôn ghi rõ AI hỗ trợ ở khâu nào, và quan trọng nhất là đọc hiểu rồi viết lại bằng ngôn ngữ của mình thay vì sao chép.',
     },
     {
-      challenge: '[Khó khăn 3 - tự bổ sung]',
-      solution: '[Cách bạn vượt qua - tự bổ sung]',
+      challenge: 'Quản lý thời gian kém, để dồn nhiều bài tập đến gần deadline gây áp lực lớn.',
+      solution: 'Sử dụng Trello để theo dõi tiến độ, chia nhỏ công việc thành từng bước cụ thể, và đặt deadline cá nhân sớm hơn deadline thực tế 2-3 ngày.',
     },
   ];
 
   const proudMoments = [
-    '[Điều tự hào 1 - tự bổ sung]',
-    '[Điều tự hào 2 - tự bổ sung]',
-    '[Điều tự hào 3 - tự bổ sung]',
+    'Hoàn thành Portfolio đầy đủ với 6 bài tập được trình bày chuyên nghiệp, có cấu trúc rõ ràng và nội dung chất lượng.',
+    'Thực sự hiểu và áp dụng được AI một cách có trách nhiệm, biến nó thành công cụ hỗ trợ học tập hiệu quả thay vì lệ thuộc.',
+    'Phát triển tư duy phản biện và thói quen kiểm chứng thông tin - kỹ năng quý giá cho cả cuộc sống và sự nghiệp tương lai.',
   ];
 
   return (
@@ -83,16 +83,22 @@ const Conclusion = () => {
                   </div>
                   <div className="prose prose-lg max-w-none text-muted-foreground space-y-4">
                     <p>
-                      [Đây là nơi bạn chia sẻ trải nghiệm cá nhân khi làm Portfolio. 
-                      Hãy viết về quá trình từ lúc bắt đầu cho đến khi hoàn thành.]
+                      Khi bắt đầu môn học Nhập môn Công nghệ số và Ứng dụng AI, tôi không nghĩ mình 
+                      sẽ học được nhiều đến vậy. Là sinh viên ngành Kinh tế, ban đầu tôi cho rằng 
+                      công nghệ số chỉ là "biết dùng máy tính" - nhưng thực tế đã chứng minh suy nghĩ 
+                      đó hoàn toàn sai lầm.
                     </p>
                     <p>
-                      [Bạn cảm thấy như thế nào khi nhìn lại toàn bộ sản phẩm? 
-                      Có gì bất ngờ hay thú vị trong quá trình thực hiện?]
+                      Quá trình làm Portfolio này giúp tôi nhìn lại toàn bộ hành trình học tập. Từ 
+                      việc hiểu cấu tạo máy tính, đến cách tìm kiếm thông tin hiệu quả, rồi học cách 
+                      sử dụng AI có trách nhiệm - mỗi chương đều mang lại những bài học quý giá. 
+                      Đặc biệt, phần về liêm chính học thuật đã thay đổi cách tôi nhìn nhận về việc học.
                     </p>
                     <p>
-                      [Phần này nên thể hiện sự chân thành và suy nghĩ sâu sắc của bạn 
-                      về hành trình học tập vừa qua.]
+                      Điều bất ngờ nhất với tôi là nhận ra rằng kỹ năng số không chỉ dành cho dân 
+                      công nghệ. Trong thời đại AI, sinh viên kinh tế như tôi càng cần hiểu về công 
+                      nghệ để thích ứng với thị trường lao động đang thay đổi. Portfolio này không 
+                      chỉ là bài tập - đây là minh chứng cho sự trưởng thành của tôi trong tư duy số.
                     </p>
                   </div>
                 </CardContent>
