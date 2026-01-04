@@ -6,6 +6,7 @@ import { Button } from '@/components/ui/button';
 import { useState } from 'react';
 
 type Screenshot = string | { src: string; caption: string };
+type Video = { src: string; caption: string };
 
 interface ProjectCardProps {
   id: string;
@@ -19,6 +20,7 @@ interface ProjectCardProps {
   };
   evidence: {
     screenshots: Screenshot[];
+    videos?: Video[];
     links: string[];
   };
   analysis: {
@@ -198,6 +200,23 @@ const ProjectCard = ({ chapter, title, summary, objectives, process, evidence, a
                             <Image className="w-8 h-8 mx-auto text-muted-foreground mb-2" />
                             <p className="text-xs text-muted-foreground">Thêm ảnh minh chứng</p>
                           </div>
+                        </div>
+                      ))}
+                    </div>
+                  )}
+                  {evidence.videos && evidence.videos.length > 0 && (
+                    <div className="space-y-4">
+                      <h5 className="text-sm font-medium">Video minh chứng:</h5>
+                      {evidence.videos.map((video, i) => (
+                        <div key={i} className="space-y-2">
+                          <div className="aspect-video bg-muted rounded-lg border border-border overflow-hidden">
+                            <video 
+                              src={video.src}
+                              controls
+                              className="w-full h-full object-cover"
+                            />
+                          </div>
+                          <p className="text-xs text-muted-foreground text-center">{video.caption}</p>
                         </div>
                       ))}
                     </div>
