@@ -286,8 +286,8 @@ const projectsData = [
       tools: ['Google Search - Tra cứu quy định', 'Notion - Tổng hợp kiến thức', 'ChatGPT - Hỗ trợ phân tích tình huống (có kiểm chứng)', 'Turnitin - Hiểu về kiểm tra đạo văn'],
     },
     evidence: {
-      screenshots: ['Ảnh bản cam kết liêm chính', 'Ảnh ví dụ trích dẫn đúng chuẩn'],
-      links: ['Link bài viết về an toàn thông tin', 'Link cam kết liêm chính học thuật'],
+      screenshots: [],
+      links: [],
     },
     analysis: {
       strengths: [
